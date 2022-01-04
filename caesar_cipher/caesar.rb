@@ -13,6 +13,7 @@ def caesar_cipher(string, shift)
       shifted << char.chr
     end
   end
+  shifted.join
 end
 
 def character_shift(char, shift, max, correction)
@@ -22,3 +23,7 @@ def character_shift(char, shift, max, correction)
   end
   char
 end
+
+puts caesar_cipher("Testing 123, Testing!", 10)
+
+puts caesar_cipher("What a string!", 5)
