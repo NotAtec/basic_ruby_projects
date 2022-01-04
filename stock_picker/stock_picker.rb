@@ -21,3 +21,9 @@ def stock_picker(prices)
 
   pick[0,2]
 end
+
+
+p stock_picker([20,3,6,9,15,8,6,2,1]) # Test for result on highest 1st day
+p stock_picker([12,3,6,9,15,8,6,2,1]) # Test for result on lowest last day
+p stock_picker([14,3,6,9,15,8,6,2,4]) # Normal test
+#All should return [1, 4]
