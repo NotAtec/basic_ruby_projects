@@ -1,6 +1,6 @@
 def substrings(string, dictionary)
   hash = {}
-  string.gsub!(/\W/, '') #Clean up non word characters from string for parsing
+  string.gsub!(/[\W]&&[^\s]/, '') #Clean up non word characters from string for parsing
   string.downcase!
   dictionary.each do |check|
     hash[check] = string.scan(check).size
