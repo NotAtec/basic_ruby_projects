@@ -1,10 +1,4 @@
 def bubble_sort(array)
-  # until array = sorted:
-  # grab first item
-  # Compare to next item
-  # If second item < first item: Swap items, array val = false
-  # Else: Keep items, set array val = true
-  # grap next item, and redo comparison
   sorted = false
   until sorted do
     unsorted = false
@@ -14,7 +8,7 @@ def bubble_sort(array)
           sorted = false
         end
         break
-      elsif val < array[idx + 1]
+      elsif val <= array[idx + 1]
         sorted = true
       else
         unsorted = true
@@ -22,7 +16,6 @@ def bubble_sort(array)
         array[idx] = val2
         array[idx + 1] = val
       end
-      p array
     end
   end
   array
