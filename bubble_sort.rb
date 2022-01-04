@@ -1,20 +1,13 @@
 def bubble_sort(array)
-  sorted = false
-  until sorted do
+  unsorted = true
+  while unsorted do
     unsorted = false
     array.each_with_index do |val, idx|
       if idx == array.size - 1
-        if unsorted == true 
-          sorted = false
-        end
         break
-      elsif val <= array[idx + 1]
-        sorted = true
-      else
+      elsif val > array[idx + 1]
         unsorted = true
-        val2 = array[idx + 1]
-        array[idx] = val2
-        array[idx + 1] = val
+        array[idx], array[idx + 1] = array[idx + 1], array[idx]
       end
     end
   end
