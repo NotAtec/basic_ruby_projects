@@ -7,6 +7,8 @@ A self-made bubble sorting algorithm
 
 ### Caesar Cipher
 An implementation of the Caesarian Cipher encoding. Allows for input of custom shifting amount.
+#### Tests
+For learning RSpec, tests have been added for all functions in this cipher method.
 
 ### Stock Picker
 A hypothetical stock picking method, which chooses the best buy & sell date based on known prices across a time-period.
